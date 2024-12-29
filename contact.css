@@ -1,0 +1,338 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    background: url('images/backgrounds/Third\ eye\ activation\ portal.gif') no-repeat center center/cover; /* AI-themed background image */
+    min-height: 100vh;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar (Static) */
+.sidebar {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    height: 100%;
+    width: 200px; /* Sidebar remains expanded at all times */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    position: sticky;
+}
+
+/* Sidebar List Items */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    text-align: center; /* Center the icons */
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+    background-color: #333;
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Sidebar Icons */
+.sidebar a i {
+    font-size: 24px;
+    margin-right: 0;
+    transition: margin-right 0.3s ease;
+}
+
+/* Sidebar Text */
+.sidebar a span {
+    opacity: 1;
+    margin-left: 10px;  /* Text remains visible */
+    font-size: 16px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Sidebar Text Hover Effect */
+.sidebar a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0ff; /* Underline color */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header */
+/* Header Section with Background Image */
+.header {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px; /* Increase padding for larger header */
+    /* background: url('images/backgrounds/ai-bg1.png') no-repeat center center/cover;  */
+    /* AI-themed background image */
+    /* background-size: contain; */
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Dark Gradient Overlay for Readability */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Dark gradient overlay */
+    z-index: 0;
+}
+
+/* Header Main Text */
+.header h1 {
+    position: relative;
+    z-index: 1; /* Ensure text is above the gradient */
+    animation: glow 2s infinite ease-in-out alternate, slideIn 1.5s ease-out forwards; /* Glowing text with slide-in */
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+/* Subheader Text */
+#subHeaderText {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0;
+    color: #f0f0f0;
+    animation: fadeInOut 5s infinite; /* Fades in and out */
+    z-index: 1;
+}
+
+/* Slide-In Animation for Main Text */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Glowing Effect for Text */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    }
+    100% {
+        text-shadow: 0 0 20px #00ffcc, 0 0 30px #0ff, 0 0 40px #0ff;
+    }
+}
+
+/* Fading In and Out for Subheader */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Contact Form Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    flex-grow: 1;
+}
+
+/* AI Interface */
+.ai-interface {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.ai-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.ai-message p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+    font-style: italic;
+}
+
+/* Contact Form Styling */
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Form Group Wrapper */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e1e1e; /* Dark background for the input field */
+    border: 1px solid #444; /* Subtle border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff; /* White text for readability */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Glowing Effect on Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: #00ffcc; /* Neon cyan border on focus */
+    box-shadow: 0 0 8px #00ffcc; /* Glowing box shadow effect */
+}
+
+/* Floating Labels */
+.floating-label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 1rem;
+    color: #888; /* Subtle grey color for labels */
+    pointer-events: none; /* Ensure the label doesn't block clicks */
+    transition: all 0.3s ease; /* Smooth transition for label movement */
+}
+
+/* Move label upwards when input is focused or has value */
+.contact-form input:focus + .floating-label,
+.contact-form textarea:focus + .floating-label,
+.contact-form input:not(:placeholder-shown) + .floating-label,
+.contact-form textarea:not(:placeholder-shown) + .floating-label {
+    top: -15px; /* Move the label upwards */
+    left: 8px; /* Slight left adjustment */
+    font-size: 0.85rem; /* Make the label smaller */
+    color: #00ffcc; /* Neon color for active label */
+    background-color: #1e1e1e; /* Dark background behind the label for readability */
+    padding: 0 5px; /* Padding for better spacing */
+}
+
+/* Button Styles */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #00ffcc; /* Neon cyan background for button */
+    color: #000;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e88e5; /* Muted blue on hover */
+}
+
+/* Loading Animation */
+.loading {
+    text-align: center;
+    color: #4db6ac;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    color: #1e88e5;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}

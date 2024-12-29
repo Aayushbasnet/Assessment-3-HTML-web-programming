@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="the-future-of-ai.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>The Future of AI</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+                <li><a href="the-future-of-ai.html"><i class="fas fa-robot"></i><span>The Future of AI</span></a></li>
+                <li><a href="risk-and-benefits.html"><i class="fas fa-exclamation-triangle"></i><span>Risks & Benefits</span></a></li>
+                <li><a href="ethics.html"><i class="fas fa-balance-scale"></i><span>Ethics in AI</span></a></li>
+                <li><a href="references.html"><i class="fas fa-book"></i><span>References</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Parallax Main Sections -->
+        <main class="main">
+            <!-- Parallax Section 1: Transition to Strong AI -->
+            <section class="parallax-section parallax-bg-5">
+                <div class="parallax-content">
+                    <h2>The Transition from Weak AI to Strong AI</h2>
+                    <p>Currently, AI is limited to specific tasks, known as "Weak AI." The future holds the promise of "Strong AI," where machines will surpass humans in all cognitive abilities, revolutionizing industries and everyday life.</p>
+                </div>
+            </section>
+        
+            <!-- Parallax Section 2: Growth of AI in Industries -->
+            <section class="parallax-section parallax-bg-6">
+                <div class="parallax-content">
+                    <h2>AI's Growth Across Industries</h2>
+                    <p>AI is set to revolutionize sectors such as healthcare, education, finance, transportation, and even cybersecurity. From diagnosing diseases to managing financial investments, AI will continue to transform the way we work and live.</p>
+                </div>
+            </section>
+            <!-- Rotating Rim -->
+            <!-- Orbit Section (Centered) -->
+            <div class="orbit-container">
+                <div class="orbit">
+                    <div class="circle"></div>
+                    <div class="points">
+                        <a href="#healthcare" class="point a">Healthcare</a>
+                        <a href="#education" class="point b">Education</a>
+                        <a href="#finance" class="point c">Finance</a>
+                        <a href="#military" class="point d">Military</a>
+                        <a href="#transportation" class="point e">Transportation</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Parallax Section 3: Healthcare -->
+            <section id="healthcare" class="parallax-section parallax-bg-3">
+                <div class="parallax-content">
+                    <h2>AI in Healthcare</h2>
+                    <p>The future of AI in healthcare promises earlier disease detection, personalized treatments, and smarter healthcare systems.</p>
+                </div>
+            </section>
+
+            <!-- Parallax Section 4: Education -->
+            <section id="education" class="parallax-section parallax-bg-2">
+                <div class="parallax-content">
+                    <h2>AI in Education</h2>
+                    <p>AI will transform traditional schooling, personalizing education to match individual abilities and providing new opportunities for both high achievers and struggling students.</p>
+                </div>
+            </section>
+
+            <!-- Parallax Section 5: Finance -->
+            <section id="finance" class="parallax-section parallax-bg-7">
+                <div class="parallax-content">
+                    <h2>AI in Finance</h2>
+                    <p>AI-driven systems are revolutionizing financial strategies, from fund management to robo-advisors that can optimize investments better than human supervisors.</p>
+                </div>
+            </section>
+
+            <!-- Parallax Section 6: Military -->
+            <section id="military" class="parallax-section parallax-bg-4">
+                <div class="parallax-content">
+                    <h2>AI in Military & Cybersecurity</h2>
+                    <p>AI is enhancing military technologies with autonomous weapon systems and improved mission efficiency, while raising ethical concerns around explainability and safety.</p>
+                </div>
+            </section>
+
+            <!-- Parallax Section 7: Transportation -->
+            <section id="transportation" class="parallax-section parallax-bg-8">
+                <div class="parallax-content">
+                    <h2>AI in Transportation</h2>
+                    <p>AI is set to revolutionize transportation with autonomous vehicles, predictive systems, and smarter infrastructure that enhance road safety and efficiency.</p>
+                </div>
+            </section>
+        
+            <!-- Parallax Section 8: Categories of AI -->
+            <section class="parallax-section parallax-bg-9">
+                <div class="parallax-content">
+                    <h2>Categories of AI: From Narrow to Super AI</h2>
+                    <ul>
+                        <strong>Narrow AI:</strong> AI focused on specific tasks like self-driving cars and voice recognition.<br>
+                        <strong>General AI (AGI):</strong> Future AI capable of mimicking human intelligence.<br>
+                        <strong>Super AI:</strong> Theoretical self-aware AI with cognitive abilities far surpassing humans.<br>
+                    </ul>
+                </div>
+            </section>
+        
+            <!-- Parallax Section 9: Economic Impact of AI -->
+            <section class="parallax-section parallax-bg-10">
+                <div class="parallax-content">
+                    <h2>The Economic Impact of AI</h2>
+                    <p>AI is predicted to contribute $15.7 trillion to the global economy by 2030, with an expected market value of $267 billion by 2027. The future of AI promises economic growth across every industry.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" id="scrollTopBtn" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+        <footer class="footer">
+            <p>&copy; 2024 Future of AI | All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+<script>
+    // Get the button
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Show the button when the user scrolls down 100px
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    };
+
+    // When the user clicks on the button, scroll to the top of the page
+    scrollTopBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default anchor behavior
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Our AI Assistant</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Container Div -->
+    <div class="container">
+        
+        <!-- Side Navbar -->
+         <!-- TODO: add offline icon -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="main.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+                <li><a href="the-future-of-ai.html"><i class="fas fa-robot"></i><span>The Future of AI</span></a></li>
+                <li><a href="risk-and-benefits.html"><i class="fas fa-exclamation-triangle"></i><span>Risks & Benefits</span></a></li>
+                <li><a href="ethics.html"><i class="fas fa-balance-scale"></i><span>Ethics in AI</span></a></li>
+                <li><a href="references.html"><i class="fas fa-book"></i><span>References</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header Section -->
+            <!-- Header Section with Background Image -->
+            <header class="header" style="height: 180px;">
+                <!-- Text with Glowing Effect -->
+                <h1 id="headerText">Welcome to the Future of AI</h1>
+                <!-- Subheader with Animation -->
+                <p id="subHeaderText">Contact our virtual assistant to get started</p>
+            </header>
+            
+            <!-- Main Section -->
+            <main class="contact-section">
+                <div class="ai-interface">
+                    <!-- AI Avatar/Animation -->
+                    <div class="ai-avatar">
+                        <img src="images/icons/chatbot.png" alt="AI Avatar">
+                    </div>
+                    
+                    <!-- AI Bot's Welcome Message -->
+                    <div class="ai-message">
+                        <p id="aiMessage">👋 Hello! I'm your virtual assistant. How can I help you today?</p>
+                    </div>
+                    
+                    <!-- Contact Form Styled as a Chat -->
+                    <form class="contact-form" id="contactForm" onsubmit="return handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" class="floating-label">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" class="floating-label">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message" class="floating-label">Your Message</label>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    
+                    <!-- Loading Animation -->
+                    <div class="loading" id="loading" style="display: none;">
+                        <p>Sending...</p>
+                    </div>
+                    
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <p>Message Sent Successfully!</p>
+                    </div>
+                </div>
+            </main>
+            
+            <!-- Footer Section -->
+            <footer class="footer">
+                <p>&copy; 2024 AI Assistant. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
